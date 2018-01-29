@@ -2,6 +2,15 @@
 
 :fork_and_knife: from <https://github.com/nashville-software-school/ng-todo-boilerplate>
 
+### Run locally
+
+```bash
+git clone git@github.com:kenziebottoms/nss-front-05-angular-todo.git
+cd nss-front-05-angular-todo/lib
+npm install
+grunt
+```
+
 ### Goals
 
 #### Technical
@@ -14,14 +23,15 @@
 - [ ] Add controllers
     - [x] `NavCtrl`
     - [x] `ItemListCtrl`
-    - [ ] `NewItemCtrl`
+    - [x] `NewItemCtrl`
     - [x] `ItemDetailsCtrl`
-- [ ] Weaponize add
+- [x] Weaponize add
 - [ ] Weaponize delete
+- [ ] Make data persistent (Firebase)
 
 #### Functional
 
-- [ ] Add new item
+- [x] Add new item
 - [ ] Check item as done
 - [ ] Delete items
 - [x] View all items
