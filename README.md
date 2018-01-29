@@ -11,10 +11,10 @@
     - [x] Item list
     - [x] New item
     - [x] Item details
-- [x] Add controllers
+- [ ] Add controllers
     - [x] `NavCtrl`
     - [x] `ItemListCtrl`
-    - [x] `NewItemCtrl`
+    - [ ] `NewItemCtrl`
     - [x] `ItemDetailsCtrl`
 - [ ] Weaponize add
 - [ ] Weaponize delete
