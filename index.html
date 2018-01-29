@@ -11,13 +11,7 @@
   <nav ng-controller="NavCtrl" ng-include="'/partials/navbar.html'" class="navbar navbar-default"></nav>
   <!-- TODO: Add a controller for our todo list -->
   <div>
-    <div class="row">
-      <div class="col-xs-6 col-xs-offset-3">
-        <!-- Let's call a js function from our HTML. wat? -->
-        <button class="col-xs-6 btn btn-success">New Item</button>
-        <button class="col-xs-6 btn btn-info"> All Items</button>
-      </div>
-    </div>
+    <div ng-view></div>
     <!-- TODO: add form controller -->
   </div>
 
