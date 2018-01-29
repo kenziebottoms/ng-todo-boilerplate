@@ -8,7 +8,14 @@
 
 - [x] Bust HTML out into partials
 - [ ] Config router
+    - [ ] Item list
+    - [ ] New item
+    - [ ] Item details
 - [ ] Add controllers
+    - [x] `NavCtrl`
+    - [ ] `ItemListCtrl`
+    - [ ] `NewItemCtrl`
+    - [ ] `ItemDetailsCtrl`
 
 #### Functional
 
