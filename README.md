@@ -7,15 +7,17 @@
 #### Technical
 
 - [x] Bust HTML out into partials
-- [ ] Config router
+- [x] Config router
     - [x] Item list
-    - [ ] New item
-    - [ ] Item details
-- [ ] Add controllers
+    - [x] New item
+    - [x] Item details
+- [x] Add controllers
     - [x] `NavCtrl`
     - [x] `ItemListCtrl`
-    - [ ] `NewItemCtrl`
-    - [ ] `ItemDetailsCtrl`
+    - [x] `NewItemCtrl`
+    - [x] `ItemDetailsCtrl`
+- [ ] Weaponize add
+- [ ] Weaponize delete
 
 #### Functional
 
@@ -23,4 +25,4 @@
 - [ ] Check item as done
 - [ ] Delete items
 - [x] View all items
-- [ ] View one item's details
+- [x] View one item's details
