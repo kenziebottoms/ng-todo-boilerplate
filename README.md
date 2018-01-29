@@ -20,19 +20,19 @@ grunt
     - [x] Item list
     - [x] New item
     - [x] Item details
-- [ ] Add controllers
+- [x] Add controllers
     - [x] `NavCtrl`
     - [x] `ItemListCtrl`
     - [x] `NewItemCtrl`
     - [x] `ItemDetailsCtrl`
 - [x] Weaponize add
-- [ ] Weaponize delete
-- [ ] Make data persistent (Firebase)
+- [x] Weaponize delete
+- [x] Make data persistent (Firebase)
 
 #### Functional
 
 - [x] Add new item
-- [ ] Check item as done
-- [ ] Delete items
+- [x] Check item as done
+- [x] Delete items
 - [x] View all items
 - [x] View one item's details
