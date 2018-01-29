@@ -5,7 +5,7 @@ angular.module("TodoApp").factory("ItemFactory", function() {
         {
             "id": 0,
             "task": "mow the lawn",
-            "isCompleted": true,
+            "isCompleted": false,
             "dueDate": "12/5/17",
             "assignedTo": "Greg",
             "location": "Joe's house",

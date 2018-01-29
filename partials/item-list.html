@@ -19,7 +19,7 @@
         </thead>
         <tr ng-repeat="item in items">
             <td>
-                {{item.isCompleted ? 'true' : 'false'}}
+                <input type="checkbox" ng-model="item.isCompleted">
             </td>
             <td class="text-muted">{{item.dueDate}}</td>
             <td>{{item.assignedTo}}</td>
