@@ -34,9 +34,14 @@ angular.module("TodoApp").factory("ItemFactory", function() {
         }
     ];
 
-    function getTodoItems() {
+    function getItems() {
         return items;
     }
 
-    return { getTodoItems };
+    function addItem(item) {
+        items.push(item);
+        return items;
+    }
+
+    return { getItems, addItem };
 });

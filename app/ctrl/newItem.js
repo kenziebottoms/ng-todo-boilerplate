@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("TodoApp").controller("NewItemCtrl", function($scope) {
+angular.module("TodoApp").controller("NewItemCtrl", function($scope, ItemFactory) {
     $scope.newTask = {
         "id": 0,
         "task": "",
@@ -12,6 +12,6 @@ angular.module("TodoApp").controller("NewItemCtrl", function($scope) {
         "dependencies": ""
     };
     $scope.addNewItem = () => {
-        console.log($scope.newTask);
+        ItemFactory.addItem($scope.newTask);
     };
 });
