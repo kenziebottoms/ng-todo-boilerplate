@@ -8,12 +8,12 @@
 
 - [x] Bust HTML out into partials
 - [ ] Config router
-    - [ ] Item list
+    - [x] Item list
     - [ ] New item
     - [ ] Item details
 - [ ] Add controllers
     - [x] `NavCtrl`
-    - [ ] `ItemListCtrl`
+    - [x] `ItemListCtrl`
     - [ ] `NewItemCtrl`
     - [ ] `ItemDetailsCtrl`
 

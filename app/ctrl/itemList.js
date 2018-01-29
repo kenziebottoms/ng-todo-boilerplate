@@ -5,7 +5,7 @@ angular.module("TodoApp").controller("ItemListCtrl", function ($scope) {
         {
             "id": 0,
             "task": "mow the lawn",
-            "isCompleted": false,
+            "isCompleted": true,
             "dueDate": "12/5/17",
             "assignedTo": "Greg",
             "location": "Joe's house",

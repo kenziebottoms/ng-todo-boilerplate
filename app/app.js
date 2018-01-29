@@ -5,7 +5,7 @@ angular.module("TodoApp", ["ngRoute"])
         $routeProvider
             .when("/items/list", {
                 templateUrl: "/partials/item-list.html",
-                // TODO: controller: "ItemListCtrl"
+                controller: "ItemListCtrl"
             })
             .when("/items/new", {
                 templateUrl: "/partials/item-form.html",
