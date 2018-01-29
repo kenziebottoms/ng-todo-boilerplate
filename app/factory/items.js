@@ -43,5 +43,11 @@ angular.module("TodoApp").factory("ItemFactory", function() {
         return items;
     }
 
-    return { getItems, addItem };
+    function deleteItem(id) {
+        let index = items.indexOf(items.find(item => item.id == id));
+        items.splice(index, 1);
+        return items;
+    }
+
+    return { getItems, addItem, deleteItem };
 });
