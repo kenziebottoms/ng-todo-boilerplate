@@ -6,7 +6,9 @@
 
 #### Technical
 
-- [ ] Bust HTML out into partials
+- [x] Bust HTML out into partials
+- [ ] Config router
+- [ ] Add controllers
 
 #### Functional
 

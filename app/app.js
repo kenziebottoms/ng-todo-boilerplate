@@ -16,5 +16,6 @@ angular.module("TodoApp", ["ngRoute"])
             .when("/items/details/:id", {
                 templateUrl: "/partials/item-details.html",
                 // TODO: controller: "ItemDetailsCtrl"
-            });
+            })
+            .otherwise("items/list");
     });

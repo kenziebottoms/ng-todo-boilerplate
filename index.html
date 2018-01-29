@@ -8,8 +8,7 @@
 </head>
 
 <body ng-app="TodoApp">
-  <!-- TODO: Add a nav controller -->
-
+  <nav ng-controller="NavCtrl" ng-include="'/partials/navbar.html'" class="navbar navbar-default"></nav>
   <!-- TODO: Add a controller for our todo list -->
   <div>
     <div class="row">
@@ -28,6 +27,7 @@
   <script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
   <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
   <script type="text/javascript" src="app/app.js"></script>
+  <script type="text/javascript" src="app/ctrl/nav.js"></script>
 </body>
 
 </html>
