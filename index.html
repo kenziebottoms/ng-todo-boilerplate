@@ -9,10 +9,8 @@
 
 <body ng-app="TodoApp">
   <nav ng-controller="NavCtrl" ng-include="'/partials/navbar.html'" class="navbar navbar-default"></nav>
-  <!-- TODO: Add a controller for our todo list -->
   <div>
     <div ng-view></div>
-    <!-- TODO: add form controller -->
   </div>
 
   <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
@@ -23,6 +21,8 @@
   <script type="text/javascript" src="app/app.js"></script>
   <script type="text/javascript" src="app/ctrl/nav.js"></script>
   <script type="text/javascript" src="app/ctrl/itemList.js"></script>
+  <script type="text/javascript" src="app/ctrl/itemDetails.js"></script>
+  <script type="text/javascript" src="app/factory/items.js"></script>
 </body>
 
 </html>

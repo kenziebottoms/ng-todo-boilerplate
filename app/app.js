@@ -15,7 +15,7 @@ angular.module("TodoApp", ["ngRoute"])
             //  it would catch "list and "new" as :id
             .when("/items/details/:id", {
                 templateUrl: "/partials/item-details.html",
-                // TODO: controller: "ItemDetailsCtrl"
+                controller: "ItemDetailsCtrl"
             })
             .otherwise("items/list");
     });

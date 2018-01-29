@@ -22,5 +22,5 @@
 - [ ] Add new item
 - [ ] Check item as done
 - [ ] Delete items
-- [ ] View all items
+- [x] View all items
 - [ ] View one item's details
