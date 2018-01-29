@@ -9,7 +9,7 @@ angular.module("TodoApp", ["ngRoute"])
             })
             .when("/items/new", {
                 templateUrl: "/partials/item-form.html",
-                // TODO: controller: "NewItemCtrl"
+                controller: "NewItemCtrl"
             })
             // this goes at the bottom because otherwise
             //  it would catch "list and "new" as :id
