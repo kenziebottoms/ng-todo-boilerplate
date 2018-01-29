@@ -18,7 +18,7 @@
         </thead>
         <tr ng-repeat="item in items|filter:{task:searchTasks}">
             <td>
-                <input type="checkbox" ng-model="item[1].isCompleted">
+                <input type="checkbox" ng-click="setItemCompletion(item[0], item[1].isCompleted)" ng-model="item[1].isCompleted">
             </td>
             <td class="text-muted">{{item[1].dueDate}}</td>
             <td>{{item[1].assignedTo}}</td>

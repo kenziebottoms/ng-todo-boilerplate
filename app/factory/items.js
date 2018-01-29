@@ -19,7 +19,6 @@ angular.module("TodoApp").factory("ItemFactory", ($q, $http, fbUrl) => {
     }
 
     function deleteItem(key) {
-        console.log(key);
         return $q((resolve, reject) => {
             $http.delete(`${fbUrl}/items/${key}.json`)
                 .then(response => resolve(response))
@@ -27,5 +26,13 @@ angular.module("TodoApp").factory("ItemFactory", ($q, $http, fbUrl) => {
         });
     }
 
-    return { getItems, addItem, deleteItem };
+    function setItemCompletion(key, complete) {
+        return $q((resolve, reject) => {
+            $http.patch(`${fbUrl}/items/${key}.json`, {isCompleted:complete})
+                .then(response => resolve(response))
+                .catch(err => reject(err));
+        });
+    }
+
+    return { getItems, addItem, deleteItem, setItemCompletion };
 });
