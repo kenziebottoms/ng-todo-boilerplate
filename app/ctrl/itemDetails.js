@@ -1,6 +1,7 @@
 "use strict";
 
 angular.module("TodoApp").controller("ItemDetailsCtrl", function($scope, ItemFactory, $routeParams) {
-    let items = ItemFactory.getTodoItems();
-    $scope.selectedItem = items.find(item => item.id == $routeParams.id);
+    ItemFactory.getItems().then(items => {
+        $scope.selectedItem = items[$routeParams.key];
+    });
 });

@@ -18,15 +18,15 @@
         </thead>
         <tr ng-repeat="item in items|filter:{task:searchTasks}">
             <td>
-                <input type="checkbox" ng-model="item.isCompleted">
+                <input type="checkbox" ng-model="item[1].isCompleted">
             </td>
-            <td class="text-muted">{{item.dueDate}}</td>
-            <td>{{item.assignedTo}}</td>
+            <td class="text-muted">{{item[1].dueDate}}</td>
+            <td>{{item[1].assignedTo}}</td>
             <td>
-                <a ng-href="#!/items/details/{{item.id}}">{{item.task}}</a>
+                <a ng-href="#!/items/details/{{item[0]}}">{{item[1].task}}</a>
             </td>
             <td>
-                <button class="btn btn-danger" ng-click="deleteItem(item.id)">X</button>
+                <button class="btn btn-danger" ng-click="deleteItem(item[0])">X</button>
             </td>
         </tr>
     </table>
