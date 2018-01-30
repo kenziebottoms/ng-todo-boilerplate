@@ -12,5 +12,6 @@ angular.module("TodoApp").controller("NewItemCtrl", function($scope, ItemFactory
     };
     $scope.addNewItem = () => {
         ItemFactory.addItem($scope.newTask);
+        $scope.newTask = {};
     };
 });

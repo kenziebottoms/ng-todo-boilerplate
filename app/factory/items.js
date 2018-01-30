@@ -13,7 +13,7 @@ angular.module("TodoApp").factory("ItemFactory", ($q, $http, fbUrl) => {
     function addItem(item) {
         return $q((resolve, reject) => {
             $http.post(`${fbUrl}/items.json`, JSON.stringify(item))
-                .then(response => resolve(response))
+                .then(response => resolve(response.data))
                 .catch(err => reject(err));
         });
     }
@@ -21,7 +21,7 @@ angular.module("TodoApp").factory("ItemFactory", ($q, $http, fbUrl) => {
     function deleteItem(key) {
         return $q((resolve, reject) => {
             $http.delete(`${fbUrl}/items/${key}.json`)
-                .then(response => resolve(response))
+                .then(response => resolve(response.data))
                 .catch(err => reject(err));
         });
     }
