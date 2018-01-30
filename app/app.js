@@ -9,7 +9,7 @@ angular.module("TodoApp", ["ngRoute"])
                 controller: "ItemListCtrl"
             })
             .when("/items/new", {
-                templateUrl: "/partials/item-form.html",
+                templateUrl: "/partials/new-item.html",
                 controller: "NewItemCtrl"
             })
             // this goes at the bottom because otherwise
