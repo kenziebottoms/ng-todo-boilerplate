@@ -1,7 +1,7 @@
 "use strict";
 
 angular.module("TodoApp").controller("NewItemCtrl", function($scope, ItemFactory) {
-    $scope.newTask = {
+    $scope.item = {
         "task": "",
         "isCompleted": false,
         "dueDate": "",
@@ -11,7 +11,7 @@ angular.module("TodoApp").controller("NewItemCtrl", function($scope, ItemFactory
         "dependencies": ""
     };
     $scope.addNewItem = () => {
-        ItemFactory.addItem($scope.newTask);
-        $scope.newTask = {};
+        ItemFactory.addItem($scope.item);
+        $scope.item = {};
     };
 });

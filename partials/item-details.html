@@ -1,8 +1,9 @@
-<h2>{{selectedItem.task}}</h2>
+<h2>{{item.task}}</h2>
 
-<h6>Assigned To: {{selectedItem.assignedTo}}</h6>
-<h6>Due Date: {{selectedItem.dueDate}}</h6>
-<h6>Dependencies: {{selectedItem.dependencies}}</h6>
-<h6>Location: {{selectedItem.location}}</h6>
-<h6>Urgency: {{selectedItem.urgency}}</h6>
-<h6>Completed ?: {{(selectedItem.isCompleted ? "yes" : "no")}}</h6>
+<h6>Assigned To: {{item.assignedTo}}</h6>
+<h6>Due Date: {{item.dueDate}}</h6>
+<h6>Dependencies: {{item.dependencies}}</h6>
+<h6>Location: {{item.location}}</h6>
+<h6>Urgency: {{item.urgency}}</h6>
+<h6>Completed?: {{(item.isCompleted ? "yes" : "no")}}</h6>
+<a ng-href="/#!/items/details/{{key}}/edit">Edit</a>

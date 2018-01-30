@@ -18,5 +18,9 @@ angular.module("TodoApp", ["ngRoute"])
                 templateUrl: "/partials/item-details.html",
                 controller: "ItemDetailsCtrl"
             })
+            .when("/items/details/:key/edit", {
+                templateUrl: "/partials/edit-item.html",
+                controller: "EditItemCtrl"
+            })
             .otherwise("items/list");
     });

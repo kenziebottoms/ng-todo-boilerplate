@@ -10,6 +10,14 @@ angular.module("TodoApp").factory("ItemFactory", ($q, $http, fbUrl) => {
         });
     }
 
+    function getItem(key) {
+        return $q((resolve, reject) => {
+            $http.get(`${fbUrl}/items/${key}.json`)
+                .then(response => resolve(response.data))
+                .catch(err => reject(err));
+        });
+    }
+
     function addItem(item) {
         return $q((resolve, reject) => {
             $http.post(`${fbUrl}/items.json`, JSON.stringify(item))
@@ -34,5 +42,13 @@ angular.module("TodoApp").factory("ItemFactory", ($q, $http, fbUrl) => {
         });
     }
 
-    return { getItems, addItem, deleteItem, setItemCompletion };
+    const editItem = (key, item) => {
+        return $q((resolve, reject) => {
+            $http.patch(`${fbUrl}/items/${key}.json`, item)
+                .then(response => resolve(response))
+                .catch(err => reject(err));
+        });
+    };
+
+    return { getItems, addItem, deleteItem, setItemCompletion, getItem, editItem };
 });
