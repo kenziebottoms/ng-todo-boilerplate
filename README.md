@@ -36,3 +36,4 @@ grunt
 - [x] Delete items
 - [x] View all items
 - [x] View one item's details
+- [x] Edit one item's details
